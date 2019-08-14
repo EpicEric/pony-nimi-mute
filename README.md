@@ -4,7 +4,7 @@ A WIP pure Pony implementation of a RegEx engine. The final goal of the repo is 
 
 Note that despite also using the `regex` package name, this will not be concerned with exact API parity to the [official library](https://github.com/ponylang/regex) at all.
 
-While the official RegEx library -- which wraps PCRE -- uses backtracking, this repository will use Thompson NFA simulation. As such, this implementation will most likely **not have backreferences** -- maybe in the far future it can be added as a parallel implementation _if_ someone else takes it on, but for now, look elsewhere!
+While the official RegEx library -- which wraps PCRE -- uses backtracking, this repository will use Thompson NFA simulation. As such, this implementation will most likely **not have backreferences**. Instead, the course of action -- once this makes it into the stdlib -- is to rename the other package to something like `pcre`, to provide any extra functionality for users that really need them.
 
 [\[reference\]](https://swtch.com/~rsc/regexp/regexp1.html)
 
